@@ -1,0 +1,92 @@
+.subscribe {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__email-input {
+  width: 100%;
+  background-color: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  outline: none;
+
+  &:not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+}
+.email-submit-button {
+  font-family: $primary-text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  color: $body-background;
+  background: $hover-color;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 29px;
+  padding-left: 29px;
+}
+.send {
+  fill: $body-background;
+  margin-left: 10px;
+}
+@media screen and (min-width: $mobile) {
+  .subscribe__email-input {
+    width: 450px;
+  }
+}
+@media (min-width: $desktop) {
+  .subscribe {
+    margin-left: auto;
+    &__title {
+      text-align: left;
+    }
+  }
+  .subscribe__form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+  }
+  .subscribe__email-input {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+}

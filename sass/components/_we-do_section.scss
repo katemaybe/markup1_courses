@@ -1,0 +1,59 @@
+.things-we-do {
+  padding-top: 0;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+@media (min-width: $desktop) {
+  .things-we-do__title {
+    font-size: 36px;
+  }
+}
+.things-we-do {
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  &__capture {
+    font-family: $primary-text;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $body-background;
+  }
+}
+@media (max-width: $desktop) {
+  .things-we-do {
+    display: none;
+  }
+}

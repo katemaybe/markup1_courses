@@ -1,0 +1,61 @@
+.filter-menu {
+  text-align: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 767px) {
+  .filter-menu {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-menu {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: $desktop) {
+  .filter-menu {
+    padding-bottom: 50px;
+  }
+}
+.filter-menu__item {
+  background-color: $light-section;
+  box-shadow: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: $headline-color;
+  border-radius: 4px;
+  padding: 6px 22px;
+  box-shadow: none;
+  border-style: none;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $body-background;
+    background-color: $hover-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition-property: background-colour, color, box-shadow;
+    transition-duration: $transition-property;
+    transition-timing-function: $transition-timing-function;
+  }
+}
+@media (min-width: $tablet) {
+  .filter-menu {
+    justify-content: center;
+  }
+}

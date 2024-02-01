@@ -1,0 +1,127 @@
+.service-ordering {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-hero-mob.jpg);
+  background-size: 480px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-color: #2f303a;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  text-align: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-hero-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-size: 768px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-hero-tab.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-hero-tab@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-size: 1600px;
+
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-hero.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-hero@2x.jpg);
+    }
+  }
+}
+
+.service-ordering {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  //background-image: linear-gradient(#2f303a66 40%, #2f303a66 40%),
+  //  url(../images/background-image.jpg);
+  min-width: 480px;
+
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(47, 48, 58);
+}
+.service-ordering__title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1, 61;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $body-background;
+
+  margin-bottom: 30px;
+}
+.service-ordering__button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.87;
+  background: $hover-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  letter-spacing: 00.06em;
+  color: $body-background;
+
+  padding: 10px 32px;
+  border-style: none;
+}
+@media (min-width: $desktop) {
+  .service-ordering {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+  .service-ordering__title {
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    color: $body-background;
+
+    margin-bottom: 30px;
+  }
+}
